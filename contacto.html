@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acerca de</title>
+        <style>
+            
+            header:first-of-type {
+                background: linear-gradient(135deg, #65beda 0%, #b0dff0 100%);
+                color: rgb(255, 255, 255);
+                padding: 10px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+            header:first-of-type h1 {
+                color: rgb(255, 255, 255);
+                font-size: 2.5em;
+                margin: 10px 0;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+
+            
+             header:last-of-type {
+                background: linear-gradient(135deg, #764ba2 0%, #667eea);
+                color: white;
+                padding: 10px 20px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+            }
+
+            header h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.3em;
+                margin: 10px 0;
+                font-weight: 300;
+            }
+
+            header img {
+                border-radius: 5%;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            }
+
+
+
+            
+            nav {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: flex-ceend;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1em;
+                padding: 10px 25px;
+                background: rgba(255,255,255,0.2);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            nav ul li a:hover {
+                background: rgba(255,255,255,0.4);
+                transform: translateY(-2px);
+            }
+
+
+            body h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                color: #000000;
+                margin: 30px 0;
+                font-size: 2.5em;
+            }
+
+            body p {
+                font-family: Arial, Helvetica, sans-serif;
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 30px;
+                text-align: justify;
+                font-size: 1.1em;
+                color: #333;
+                background: white;
+                border-radius: 8px;
+            }
+
+            
+            footer {
+                background: linear-gradient(135deg, #434343 0%, #000000 100%);
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                margin-top: 50px;
+            }
+
+            footer h3 {
+                margin: 15px 0;
+                font-size: 1.2em;
+                font-weight: 300;
+            }
+
+            footer h3:first-child {
+                font-size: 1.8em;
+                font-weight: bold;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <h1><strong>Contactos</strong></h1>
+            <h1><strong>De Peliculas</strong></h1>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <a href="https://wa.me/573138741772" target="_blank" style="position: absolute; left: 10px; top: 16%; transform: translateY(-50%);">
+        <i class="fa-brands fa-whatsapp" style="color: #00ff5e; font-size: 30px;"></i>
+    </a>
+        </header>
+        
+        
+        <header>
+            <img src="data:image/png;base64,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" width="100" height="100" alt="descripcion" class=".esquina-izquierda" >
+        <nav>
+      <ul>
+         <li><a href="index.html">Inicio</a></li>
+        <li><a href="Acerca-de.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+        </header>
+
+        
+        <h1>CONTACTOS:</h1>
+        <H2>CORREO: PEROSON123@GMAIL.COM</H2>
+        <H2>NUMERO: +57 3124322142</H2>
+        <H2>RED SOCIAL: INTRAGRAM RED 1@ YOUTUBEPELIS</H2>
+
+        
+        <footer>
+            <h3><strong>Entretenimiento De Películas</strong></h3>
+            <h3>redes1||redes2||+57 3124322142</h3>
+            <h3>cucuta</h3>
+            <h3>2025</h3>
+        </footer>
+    </body>
+</html>
