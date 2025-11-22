@@ -1,0 +1,246 @@
+ * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                min-height: 100vh;
+                color: white;
+            }
+
+            header:first-of-type {
+                background: linear-gradient(135deg, #24bceb 0%, #b0dff0 100%);
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                position: relative;
+            }
+
+            .whatsapp-link {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #02792d;
+                text-decoration: none;
+                font-size: 30px;
+            }
+
+            header:last-of-type {
+                background: linear-gradient(135deg, #764ba2 0%, #667eea);
+                color: white;
+                padding: 30px 20px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                float: right;
+            }
+
+            nav ul {
+                font-family: Arial, Helvetica, sans-serif;
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav ul li a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                text-decoration: none;
+                font-size: 1.1em;
+                padding: 10px 25px;
+                background: rgba(255,255,255,0.2);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            nav ul li a:hover {
+                background: rgba(255,255,255,0.4);
+                transform: translateY(-2px);
+            }
+
+            .auth-buttons {
+                display: flex;
+                gap: 15px;
+            }
+
+            .auth-buttons a {
+                color: white;
+                text-decoration: none;
+                font-size: 1em;
+                padding: 8px 20px;
+                background: rgba(255,255,255,0.3);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                border: 2px solid white;
+            }
+
+            .auth-buttons a:hover {
+                background: white;
+                color: #764ba2;
+                transform: translateY(-2px);
+            }
+
+            .movie-detail-container {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 15px;
+                box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+                backdrop-filter: blur(10px);
+            }
+
+            .movie-title {
+                text-align: center;
+                font-size: 3em;
+                color: #24bceb;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 4px #000000;
+            }
+
+            .movie-video {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .movie-video iframe {
+                width: 100%;
+                max-width: 800px;
+                height: 400px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            }
+
+            .movie-description {
+                font-size: 1.2em;
+                line-height: 1.6;
+                margin-bottom: 30px;
+                color: rgba(255, 255, 255, 0.9);
+                text-align: justify;
+            }
+
+            .movie-rating {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .movie-rating h3 {
+                font-size: 1.5em;
+                color: #b0dff0;
+                margin-bottom: 10px;
+            }
+
+            .stars {
+                font-size: 2em;
+                color: #ffd700;
+            }
+
+            .comments-section {
+                margin-top: 40px;
+            }
+
+            .comments-section h3 {
+                font-size: 1.8em;
+                color: #24bceb;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .comment-form {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            .comment-form label {
+                display: block;
+                margin-bottom: 5px;
+                color: #b0dff0;
+            }
+
+            .comment-form input,
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: none;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+            }
+
+            .comment-form textarea {
+                height: 100px;
+                resize: vertical;
+            }
+
+            .comment-form button {
+                background: linear-gradient(135deg, #764ba2 0%, #667eea);
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .comment-form button:hover {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2);
+                transform: scale(1.05);
+            }
+
+            .comments-list {
+                max-height: 400px;
+                overflow-y: auto;
+            }
+
+            .comment {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+            .comment-author {
+                font-weight: bold;
+                color: #24bceb;
+                margin-bottom: 5px;
+            }
+
+            .comment-text {
+                color: rgba(255, 255, 255, 0.8);
+                line-height: 1.5;
+            }
+
+            footer {
+                background: linear-gradient(135deg, #434343 0%, #000000 100%);
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                margin-top: 50px;
+            }
+
+            footer h3 {
+                margin: 15px 0;
+                font-size: 1.2em;
+                font-weight: 300;
+            }
+
+            footer h3:first-child {
+                font-size: 1.8em;
+                font-weight: bold;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+            }

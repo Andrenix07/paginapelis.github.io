@@ -1,272 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="shortcut" href="unnamed.jpg">
-        <title>peli video</title>
-        <style>
-            header:first-of-type {
-                background: linear-gradient(135deg, #24bceb 0%, #ffffff 100%);
-                color: rgb(233, 228, 228);
-                padding: 20px;
-                text-align: center;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            }
-
-            header:last-of-type {
-                background: linear-gradient(135deg, #764ba2 0%, #667eea);
-                color: white;
-                padding: 10px 20px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 30px;
-            }
-
-            
-
-            body {
-                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-                font-family: Arial, Helvetica, sans-serif;
-                position: relative;
-            }
-
-            body h1{
-                font-family: Arial, Helvetica, sans-serif;
-                position: static;
-                left: 50%;
-                top: 50%;
-                transform: translate(-1%, -450%);
-                color: #ffffff;
-                text-shadow: 2px 2px 4px #000000;
-                font-size: 50px;
-                z-index: 1;
-                text-align: center;
-            }
-
-            .auth-buttons {
-                font-family: Arial, Helvetica, sans-serif;
-                color: #f3efef;
-                float: right;
-                display: flex;
-                gap: 15px;
-                
-            }
-
-            header img {
-                border-radius: 5%;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            }
-
-            nav {
-                display: flex;
-                align-items: center;
-            }
-
-            nav ul {
-                font-family: Arial, Helvetica, sans-serif;
-                list-style: none;
-                display: flex;
-                justify-content: flex-end;
-                gap: 30px;
-                padding: 0;
-                margin: 0;
-            }
-
-            nav ul li a {
-                font-family: Arial, Helvetica, sans-serif;
-                color: white;
-                text-decoration: none;
-                font-size: 1.1em;
-                padding: 10px 25px;
-                background: rgba(255,255,255,0.2);
-                border-radius: 5px;
-                transition: all 0.3s ease;
-            }
-
-            nav ul li a:hover {
-                background: rgba(255,255,255,0.4);
-                transform: translateY(-2px);
-            }
-
-            body > img {
-                display: block;
-                margin: 20px auto;
-                max-width: 100%;
-                position: relative;
-            }
-
-            .video-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 30px auto;
-                max-width: 100%;
-            }
-
-            .video-container iframe {
-                max-width: 100%;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-                border-radius: 8px;
-            }
-
-            body p, body h2 {
-                font-family: Arial, Helvetica, sans-serif;
-                max-width: 1200px;
-                margin: 20px auto;
-                padding: 20px 30px;
-                text-align: justify;
-                font-size: 1.8em;
-                color: #fffefe;
-            }
-
-            .centro {
-             font-family: Arial, Helvetica, sans-serif;
-             display: block;
-             text-align: center;
-             font-size: 22px;
-             margin-top: 40px;
-             background: linear-gradient(90deg, #4e73ff, #6f9dff);
-             color: white;
-             text-decoration: none;
-             border-radius: 40px;
-             transition: 0.3s;
-             box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
-             font-weight: bold;
-             padding: 16px 25px;
-             
-            }
-
-            .centro:hover {
-             background: linear-gradient(90deg, #6f9dff, #4e73ff);
-             transform: scale(1.05);
-            }
-
-            .centro:active {
-             transform: scale(0.97);
-            }
-
-
-            table {
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 30px auto;
-                border-collapse: collapse;
-                width: 80%;
-                max-width: 800px;
-                background: rgb(95, 202, 175);
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                border-radius: 8px;
-                overflow: hidden;
-            }
-
-            th {
-                background: linear-gradient(135deg, #70c5ec 0%);
-                color: white;
-                padding: 15px;
-                text-align: center;
-                font-size: 1.8em;
-                text-transform: uppercase;
-            }
-
-            td {
-                padding: 15px;
-                text-align: center;
-                border-bottom: 3px solid #ddd;
-                font-size: 1.8em;
-            }
-
-            
-
-            footer {
-                font-family: Arial, Helvetica, sans-serif;
-                background: linear-gradient(135deg, #434343 0%, #000000 100%);
-                color: white;
-                text-align: center;
-                padding: 40px 20px;
-                margin-top: 50px;
-            }
-
-            footer h3 {
-                margin: 15px 0;
-                font-size: 1.2em;
-                font-weight: 300;
-            }
-
-            footer h3:first-child {
-                font-size: 1.8em;
-                font-weight: bold;
-                margin-bottom: 25px;
-                text-transform: uppercase;
-            }
-        </style>
-
-
-
-    <header style="position: relative;">
+<html lang="es">  >
+<head>
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="icon" href="unnamed.jpg">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <title>Peli Video</title>
+</head>
+<body>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <a href="https://wa.me/573138741772" target="_blank" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
-        <i class="fa-brands fa-whatsapp" style="color: #02792d; font-size: 30px;">+57 3138741772</i>
-    </a>
-
-    <div class="auth-buttons" >
-        <a href="Iniciar seccion.html">INICIAR SECCION</a>
-        <a href="Registro.html">Registrarse</a>
-    </div>
-</header>
-    <header>
-        <img src="unnamed.jpg" width="100" height="100" alt="descripcion">
-        <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Acerca-de.html">Acerca de</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    </header>
-    <body>
-        <img src="data:image/jpeg;base64,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" width="1260" height="420" >
-        <h1 ><Strong>Entretenimito De Peliculas </Strong></h1>
-        <p>Esta es una página donde pueden encontrar una gran variedad de películas, tanto producciones independientes como reconocidas a nivel mundial. Nuestro objetivo es brindar entretenimiento de calidad y agradecer a todas las personas que disfrutan del cine. Como muestra, aquí les compartimos una película independiente para que puedan apreciar la calidad del contenido que ofrecemos en nuestra plataforma.</p>
-        <div class="video-container">
-            <iframe 
-                src="https://drive.google.com/file/d/19f88SZpsd7H7XfAzHRJ4dmNpLUPm21YQ/preview" 
-                width="1260" 
-                height="480" 
-                allow="autoplay">
-            </iframe>
+    <header class="top-header">  
+        <a href="https://wa.me/573138741772" target="_blank" class="whatsapp-link">
+            <i class="fa-brands fa-whatsapp" style="color: #02792d; font-size: 30px;">+57 3138741772</i>
+        </a>
+        <div class="auth-buttons">
+            <a href="Iniciar seccion.html">INICIAR SECCIÓN</a>
+            <a href="Registro.html">Registrarse</a>
         </div>
-        
-        <p>para los que estan interesados en esta pelicula, como ven en el titulo se llama emesis blu una animacion indi echa en source film maker desarrollado por sus anfitriones que tambien la pueden conseguir en <a href="https://youtu.be/V0ODG8bFme0?si=1IpbSMkHlynhnewt">youtube</a> y apoyarlos.</p>
-        
-        <h2>Que Hay Aqui:</h2>
-        
-        <table>
-            <tr>
-                <th>genero</th>
-                <th>tipo de pelicula</th>
-            </tr>
-            <tr>
-                <td>accion</td>
-                <td>liveaction</td>
-            </tr>
-            <tr>
-                <td>comedia</td>
-                <td>animacion</td>
-            </tr>
-            <tr>
-                <td>suspenso</td>
-                <td>dibujo</td>
-            </tr>
-        </table>
-        <br><br><br>
-         <a href="catalogo.html" class="centro">INICIMOS EL ENTRETENIMEINTO</a>
+    </header>
 
-        <footer>
-            <h3><strong>Entretenimiento de peliculas</strong></h3>
-            <h3>redes1||redes2||+57 3124322142</h3>
-            <h3>cucuta</h3>
-            <h3>2025</h3>
-        </footer>
-    </body>
+    
+    <header class="main-header">
+        <img src="unnamed.jpg" width="100" height="100" alt="Logo de Entretenimiento de Películas">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Acerca-de.html" target="_blank">Acerca de</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <img src="data:image/jpeg;base64,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" width="1260" height="420" alt="Banner de películas">  <!-- Cambié a archivo separado para mejor rendimiento -->
+    <h1><strong>Entretenimiento De Películas</strong></h1>
+    <p>Esta es una página donde pueden encontrar una gran variedad de películas, tanto producciones independientes como reconocidas a nivel mundial. Nuestro objetivo es brindar entretenimiento de calidad y agradecer a todas las personas que disfrutan del cine. Como muestra, aquí les compartimos una película independiente para que puedan apreciar la calidad del contenido que ofrecemos en nuestra plataforma.</p>
+    <div class="video-container">
+        <iframe 
+            src="https://drive.google.com/file/d/19f88SZpsd7H7XfAzHRJ4dmNpLUPm21YQ/preview" 
+            width="1260" 
+            height="480" 
+            allow="autoplay">
+        </iframe>
+    </div>
+    
+    <p>Para los que están interesados en esta película, como ven en el título se llama "Emesis Blu", una animación indie hecha en Source Film Maker desarrollada por sus anfitriones que también la pueden conseguir en <a href="https://youtu.be/V0ODG8bFme0?si=1IpbSMkHlynhnewt" target="_blank">YouTube</a> y apoyarlos.</p>
+    
+    <h2>¿Qué Hay Aquí?</h2>
+    
+    <table>
+        <tr>
+            <th>Género</th>
+            <th>Tipo de Película</th>
+        </tr>
+        <tr>
+            <td>Acción</td>
+            <td>Live Action</td>
+        </tr>
+        <tr>
+            <td>Comedia</td>
+            <td>Animación</td>
+        </tr>
+        <tr>
+            <td>Suspenso</td>
+            <td>Dibujo</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <a href="catalogo.html" class="centro">INICIEMOS EL ENTRETENIMIENTO</a>
+
+    <footer>
+        <h3><strong>Entretenimiento de Películas</strong></h3>
+        <h3>Redes1 || Redes2 || +57 3124322142</h3>
+        <h3>Cúcuta</h3>
+        <h3>2025</h3>
+    </footer>
+</body>
 </html>
